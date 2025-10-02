@@ -15,6 +15,14 @@ public class CellPhone {
         this.owner = "";
     }
 
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String owner){
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
+
     public int getSerialNumber() {
     return this.serialNumber;
     }
@@ -50,11 +58,12 @@ public class CellPhone {
         this.owner = owner;
     }
     public void dial(String numberToCall) {
-        System.out.println("Dialing " + numberToCall + " from " + this.phoneNumber + "...");
-        System.out.println("Ring!");
-        System.out.println("Ring!");
+        System.out.println("Maggie is calling " + numberToCall + " from " + this.phoneNumber + "...");
         System.out.println("Ring!");
         System.out.println("Hello!!");
     }
 
+    public void dial(CellPhone phone){
+        dial(phone.getPhoneNumber());
+    }
 }

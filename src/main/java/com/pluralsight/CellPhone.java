@@ -49,4 +49,12 @@ public class CellPhone {
     public void setOwner(String owner){
         this.owner = owner;
     }
+    public void dial(String numberToCall) {
+        System.out.println("Dialing " + numberToCall + " from " + this.phoneNumber + "...");
+        System.out.println("Ring!");
+        System.out.println("Ring!");
+        System.out.println("Ring!");
+        System.out.println("Hello!!");
+    }
+
 }
